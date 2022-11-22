@@ -10,5 +10,7 @@ elif a == 2:
     print('x (0; - ∞); y (0; + ∞)')
 elif a == 3:
     print('x (0; - ∞); y (0; - ∞)')
-else:
+elif a == 4:
     print('x (0; + ∞); y (0; - ∞)')
+else:
+    print('Такой четверти не существует!')
