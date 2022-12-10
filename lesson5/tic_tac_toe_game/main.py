@@ -43,14 +43,11 @@ def checking(x: int, y: int):
 
 def check_line(chip: str):
     count = 0
-    for i in range(len(map)):
-        for j in range(len(map[i])):
-            if (i == j and map[i][j] == chip):
-                count += 1
-        if count == SIZE:
-            return True
-        else:
-            count = 0
+    if (map[0][0] == chip and map[1][1] == chip and map[2][2] == chip):
+        return True
+
+    if (map[0][2] == chip and map[1][1] == chip and map[2][0] == chip):
+        return True
 
     for i in range(len(map)):
         for j in range(len(map[i])):
